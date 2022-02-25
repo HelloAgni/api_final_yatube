@@ -70,6 +70,6 @@ Python 3.9.7, Django 2.2.16,  Django Rest Framework 3.12.4, Djoser, Simple JWT
 Для тестирония API использовался - Postman
 
 ```
-Автор студен 28 кагорты ЯП Байбак К.
+Автор студент 28 кагорты ЯП Байбак К.
 Back-end developer student.
 ```
