@@ -12,26 +12,46 @@
 
 Cоздать и активировать виртуальное окружение:
 
-> python3 -m venv env
+Windows
+> python -m venv venv
+> source venv/Scripts/activate
 
-> source env/bin/activate
+Linux
+> python3 -m venv venv
+> source venv/bin/activate
 
 Установить зависимости из файла requirements.txt:
-
-> python3 -m pip install --upgrade pip
-
+Windows
+> python -m pip install --upgrade pip
 > pip install -r requirements.txt
 
-Выполнить миграции:
+Linux
+> python -m pip install --upgrade pip
+> pip install -r requirements.txt
 
+Выполнить миграции и запустить проект:
+Windows
+> python manage.py migrate
+> python manage.py runserver
+
+Linux
 > python3 manage.py migrate
-
-Запустить проект:
-
 > python3 manage.py runserver
 
 ***Примеры.***
 ```
+GET http://127.0.0.1:8000/api/v1/posts/
+[
+    {
+        "id": 1,
+        "author": "User3",
+        "text": "В лесу родилась ёлочка, в лесу она росла...",
+        "pub_date": "2022-02-23T16:39:25.754620Z",
+        "image": null,
+        "group": 1
+    },
+...
+
 POST http://127.0.0.1:8000/api/v1/posts/
 {
 "text": "string",
