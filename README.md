@@ -14,28 +14,36 @@ Cоздать и активировать виртуальное окружен�
 
 Windows
 > python -m venv venv
+
 > source venv/Scripts/activate
 
 Linux
 > python3 -m venv venv
+
 > source venv/bin/activate
 
 Установить зависимости из файла requirements.txt:
+
 Windows
 > python -m pip install --upgrade pip
+
 > pip install -r requirements.txt
 
 Linux
 > python -m pip install --upgrade pip
+
 > pip install -r requirements.txt
 
 Выполнить миграции и запустить проект:
+
 Windows
 > python manage.py migrate
+
 > python manage.py runserver
 
 Linux
 > python3 manage.py migrate
+
 > python3 manage.py runserver
 
 ***Примеры.***
