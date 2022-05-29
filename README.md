@@ -34,6 +34,16 @@ Linux
 
 > pip install -r requirements.txt
 
+Сгенерировать и вставить в файл settings.py SECRET_KEY:
+
+> python manage.py shell
+
+|>>>from django.core.management.utils import get_random_secret_key
+|>>>get_random_secret_key()
+YOUR_KEY
+|>>> quit()
+скопировать полученное значение в settings.py SECRET_KEY = 'YOUR_KEY'
+
 Выполнить миграции и запустить проект:
 
 Windows
